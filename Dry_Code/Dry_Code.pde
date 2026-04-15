@@ -44,6 +44,15 @@ void draw() {
   square(400, 300, 400);
 }
 
+void tactile (int x, int y, int r){
+  if (dist(x, y, mouseX, mouseY) <  r) {
+    stroke (white);
+  } else {
+    stroke (black);
+  }
+}
+
+
 void mouseReleased() {
   if (dist(200, 200, mouseX, mouseY) <  75) {
     selectedColor = pink;
